@@ -1,14 +1,9 @@
-const express = require('express')
+import "dotenv/config"
+import app from "./src/app.js"
 
 
-const app = express()
-const port = 3000
+const PORT = 3000
 
-
-app.get('/', function (req, res) {
-  res.send('Hello World')
-})
-
-app.listen(port, () =>{
-  console.log("Ta Rolando")
+app.listen(PORT, () =>{
+    console.log("Servidor Rolando")
 })
