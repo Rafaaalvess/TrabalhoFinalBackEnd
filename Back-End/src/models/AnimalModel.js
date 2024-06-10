@@ -4,6 +4,11 @@ const getAll = async ()=>{
   const animal = await connection.execute('SELECT * FROM Animal')
   return animal[0]
 }
+const getByNome = async (req)=>{
+  const nome = req.params.nome
+  const Animal = await connection.execute('SELECT * FROM Animal Where nome = ?', [nome])
+  return Animal
+}
 const createAnimal = async (animal)=>{
   const {nome, raca, idade, situacao, descricao} = animal
   const data = new Date(Date.now())
@@ -15,5 +20,5 @@ const createAnimal = async (animal)=>{
 module.exports = {
   getAll,
   createAnimal,
-
+  getByNome
 }

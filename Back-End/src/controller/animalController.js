@@ -1,8 +1,16 @@
 const animalModel = require('../models/AnimalModel')
 
 const getAll = async (req, res)=>{
-  const user = await animalModel.getAll()
-  return res.status(200).json(user)
+  const animal = await animalModel.getAll()
+  return res.status(200).json(animal)
+}
+const getByNome = async (req, res)=>{
+  try {
+    const animal = await animalModel.getByNome(req);
+    return res.status(200).json(animal);
+  } catch (error) {
+    return res.status(500).json({ error: 'Erro ao obter animal' });
+  }
 }
 const createAnimal = async (req, res)=>{
   const createAnimal = await animalModel.createAnimal(req.body)
@@ -11,5 +19,6 @@ const createAnimal = async (req, res)=>{
 
 module.exports = {
   getAll,
-  createAnimal
+  createAnimal,
+  getByNome
 }
