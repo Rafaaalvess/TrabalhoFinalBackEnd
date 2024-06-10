@@ -39,10 +39,6 @@ Para configurar e iniciar o projeto, siga os passos abaixo:
 
 ---
 
-## Licença
-
-Este projeto está licenciado sob a Licença MIT - veja o arquivo [LICENSE](LICENSE) para mais detalhes.
-
 ## Agradecimentos
 
 Agradecemos a todos os professores e colegas que nos apoiaram e contribuíram para o desenvolvimento deste projeto. Em especial, agradecemos à nossa família e amigos pelo suporte durante todo o curso.
