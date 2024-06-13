@@ -44,5 +44,9 @@ Para configurar e iniciar o projeto, siga os passos abaixo:
 Agradecemos a todos os professores e colegas que nos apoiaram e contribuíram para o desenvolvimento deste projeto. Em especial, agradecemos à nossa família e amigos pelo suporte durante todo o curso.
 
 ---
+## Video
+
+Aqui disponibilizo o video gravado para apresentar o trabalho: https://www.youtube.com/watch?v=HLqN9EgZnr0
+
 
 Qualquer dúvida ou problema, por favor, entre em contato com um dos integrantes do grupo.
